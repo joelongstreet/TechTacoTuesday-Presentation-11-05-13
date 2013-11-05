@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Gutenberg - A Socket Based CRUD System</title>
+		<title>Passport Rest Service</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -38,74 +38,80 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Gutenberg</h1>
-					<h4>A Socket Based CRUD System</h4>
+					<h1>VML Passport</h1>
+					<h4>REST Service API</h4>
 					<p>
 						<small><a target='blank' href="http://github.com/joelongstreet">Joe Longstreet</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>The problem(s)</h2>
+					<h2>Wait, what is REST?</h2>
+
+					<pre class='fragment'>
+						<code data-trim>
+/user/khiestand
+						</code>
+					</pre>
+
+					<pre class='fragment'>
+						<code data-trim>
+{
+  "field_first_name"  : {
+    "label"                 : "Kris"
+  },
+  "field_last_name"   : {
+    "label"                 : "Hiestand"
+  },
+  "field_user_photo"  : {
+    "urls"                  : {
+      "default"             : "http://.../user-photo/KrisHiestand.jpg"
+    }
+  }
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>What's available?</h2>
 					<ul>
-						<li class="fragment">Passport's post creation interface</li>
-						<li class="fragment">Repeat efforts to post to multiple channels</li>
-						<li class="fragment">Template customization per client</li>
+						<li><strong>User<em>(s)</em></strong> - photos, phone number, group membership, birthday, department, bio...</li>
+						<li><strong>Post<em>(s)</em> / Tool<em>(s)</em></strong> - content, groups who own this resource, comments</li>
+						<li><strong>Group<em>(s)</em></strong> - members, about page, posts and tools</li>
+						<li><strong>Comment<em>(s)</em></strong> - who said what, when, and in what post</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Planning Out the Solution</h2>
+					<h2>What would you do with this?</h2>
 					<ul>
-						<li class="fragment">Deciding to go <strong>custom</strong> and <strong>abstract</strong></li>
-						<li class="fragment">Publication -> Newsletters -> Stories -> Media</li>
+						<li class="fragment">Create the Passport Interface</li>
+						<li class="fragment"><a href='http://passport.vml.com/ui/post/15397'>VISA</a> by <a href='http://passport.vml.com/ui/post/user/eneuhauser'>Eric Neuhauser</a></li>
+						<li class="fragment"><a href='https://chrome.google.com/webstore/detail/annie/bckboiechjnkhdmjielfbnhmahchjifg'>Annie</a></li>
+						<li class="fragment">Omnibar by Russell Madsen</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2><em>Product Demo!</em></h2>
-				</section>
-
-				<section>
-					<h2>High Level Feature Set</h2>
+					<h2>What else can you do with this?</h2>
 					<ul>
-						<li><strong>Multi-user</strong> <em>real time</em> editing</li>
-						<li><strong>Real time</strong> previews across channels</li>
-						<li>Simple robust <strong>wysiwyg</strong></li>
-						<li>Image cropping</li>
-						<li>Bulk image upload</li>
-						<li><strong>Pretty paste</strong> from Microsoft Word</li>
-						<li>CDN integration for fast media retrieveal</li>
-						<li><strong>Configurable</strong> image crop properties per publication</li>
-						<li><strong>Custom templates</strong> per channel per publication</li>
-						<li><strong>EJS templating</strong> per channel engine gives full access to all newsletter data</li>
-						<li>Sortable stories per channel</li>
-						<li><strong>Drag and drop to sort anything!</strong></li>
-						<li>Single Page Application (<strong>SPA</strong>)</li>
-						<li><strong>Responsive</strong></li>
+						<li class="fragment">A Chromecast app to stream Passport posts</li>
+						<li class="fragment">Data visualizations of department breakup (gender, location, etc).</li>
+						<li class="fragment">Various Mobile Applications / Extensions</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Why we should consider socket based CRUD</h2>
+					<h2>Getting more info</h2>
 					<ul>
-						<li class="fragment">Changes the way we design interfaces</li>
-						<li class="fragment">Practical for a variety of implementations</li>
-						<ul class="fragment">
-							<li>Real time dashboards</li>
-							<li>Collaborative documents</li>
-							<li>Portion of a game experience</li>
-						</ul>
-						<li class="fragment">It's KEWLLLLL!!!!</li>
+						<li>Search <strong><em>REST API</em></strong> on Passport</li>
+						<li>Talk to Andrew Koebbe, Todd Way, or Joe Longstreet</li>
 					</ul>
 				</section>
 
 				<section>
-					<h1>Questions?</h1>
-					<ul>
-						<li class="fragment">How can we incorporate this model into our current CMS offerings?</li>
-						<li class="fragment">Why not try polyglot on more applications?</li>
-					</ul>
+					<h2>Questions?</h2>
 				</section>
 
 			</div>

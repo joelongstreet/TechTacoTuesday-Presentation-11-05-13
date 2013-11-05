@@ -7,3 +7,7 @@
 .reveal ul{
   font-size : 70%;
 }
+
+.reveal pre{
+  box-shadow : none;
+}
